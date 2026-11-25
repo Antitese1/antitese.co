@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Antítese</title>
+<meta name="description" content="Como a Antítese coleta, usa, compartilha, armazena e exclui dados pessoais, inclusive dados recebidos do Facebook, Instagram e WhatsApp.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://antitese.co/privacidade">
+<meta property="og:title" content="Política de Privacidade — Antítese">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://antitese.co/privacidade">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --ink: #1b1a17;
+    --muted: #5f5c55;
+    --line: #e6e2d9;
+    --accent: #2f4f3a;
+    --accent-soft: #eef3ee;
+    --mark: #fff1b8;
+    --serif: "Iowan Old Style", "Charter", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151513;
+      --surface: #1d1d1a;
+      --ink: #ecebe6;
+      --muted: #a6a39b;
+      --line: #33322d;
+      --accent: #9cc4a6;
+      --accent-soft: #1f2a22;
+      --mark: #4a3f12;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.7 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 64px;
+  }
+  header.top {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 32px;
+  }
+  .brand {
+    font: 600 14px/1 var(--sans);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  h1 {
+    font: 500 clamp(36px, 5vw, 52px)/1.1 var(--serif);
+    margin: 20px 0 12px;
+    letter-spacing: -.01em;
+  }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+  nav.toc { position: sticky; top: 24px; align-self: start; font-size: 14px; }
+  nav.toc p { font-weight: 600; margin: 0 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; counter-reset: t; }
+  nav.toc li { counter-increment: t; }
+  nav.toc a {
+    display: block; padding: 5px 0; color: var(--muted); text-decoration: none; line-height: 1.4;
+  }
+  nav.toc a::before { content: counter(t) ". "; font-variant-numeric: tabular-nums; }
+  nav.toc a:hover { color: var(--ink); }
+  main { min-width: 0; }
+  .lead { font-size: 19px; color: var(--ink); margin-top: 0; }
+  section { border-top: 1px solid var(--line); padding-top: 28px; margin-top: 40px; }
+  section:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+  h2 { font: 500 26px/1.25 var(--serif); margin: 0 0 14px; }
+  h3 { font: 600 17px/1.4 var(--sans); margin: 24px 0 6px; }
+  p, li { max-width: 68ch; }
+  ul, ol.steps { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout p:first-child { margin-top: 0; }
+  .table-scroll { overflow-x: auto; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; background: var(--surface); }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border: 1px solid var(--line); }
+  th { font-weight: 600; background: var(--bg); }
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 16px 0; }
+  dl.facts dt { color: var(--muted); }
+  dl.facts dd { margin: 0; }
+  /* Campos a preencher antes de publicar. Remova a classe depois de preencher. */
+  .fill { background: var(--mark); padding: 0 4px; border-radius: 3px; }
+  footer { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 24px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 860px) {
+    .wrap { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; }
+    nav.toc { position: static; border: 1px solid var(--line); border-radius: 6px; padding: 16px 20px; background: var(--surface); }
+  }
+  @media print {
+    nav.toc { display: none; }
+    .wrap { display: block; }
+    .fill { background: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="brand" href="https://antitese.co">Antítese</a>
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Última atualização: 25 de novembro de 2026 · Vigente a partir desta data</p>
+  </header>
+
+  <nav class="toc" aria-label="Sumário">
+    <p>Nesta página</p>
+    <ol>
+      <li><a href="#quem-somos">Quem somos</a></li>
+      <li><a href="#abrangencia">A quem se aplica</a></li>
+      <li><a href="#dados-coletados">Dados que coletamos</a></li>
+      <li><a href="#dados-meta">Dados das plataformas Meta</a></li>
+      <li><a href="#finalidades">Como usamos os dados</a></li>
+      <li><a href="#nao-fazemos">O que não fazemos</a></li>
+      <li><a href="#compartilhamento">Compartilhamento</a></li>
+      <li><a href="#transferencia">Transferência internacional</a></li>
+      <li><a href="#retencao">Por quanto tempo guardamos</a></li>
+      <li><a href="#seguranca">Segurança</a></li>
+      <li><a href="#direitos">Seus direitos</a></li>
+      <li><a href="#exclusao-de-dados">Exclusão de dados</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#menores">Crianças e adolescentes</a></li>
+      <li><a href="#alteracoes">Alterações</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <p class="lead">Esta política explica quais dados pessoais a Antítese coleta, por que coleta, com quem compartilha, por quanto tempo guarda e como você pode pedir acesso, correção ou exclusão. Ela segue a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, “LGPD”) e os Termos da Plataforma da Meta.</p>
+
+    <section id="quem-somos">
+      <h2>1. Quem somos</h2>
+      <p>A Antítese é a controladora dos dados pessoais tratados no site <a href="https://antitese.co">antitese.co</a> e nos nossos serviços e aplicativos, inclusive os que se conectam ao Facebook, ao Instagram e ao WhatsApp.</p>
+      <dl class="facts">
+        <dt>Controladora</dt><dd>Antítese</dd>
+        <dt>Site</dt><dd><a href="https://antitese.co">antitese.co</a></dd>
+        <dt>E-mail de privacidade e do encarregado (DPO)</dt><dd><a href="mailto:samuel@antitese.co">samuel@antitese.co</a></dd>
+      </dl>
+    </section>
+
+    <section id="abrangencia">
+      <h2>2. A quem esta política se aplica</h2>
+      <p>Ela vale para quem:</p>
+      <ul>
+        <li>visita o site antitese.co;</li>
+        <li>é cliente, ou representante de cliente, dos nossos serviços;</li>
+        <li>conecta uma conta, Página ou perfil do Facebook, Instagram ou WhatsApp Business aos nossos aplicativos;</li>
+        <li>conversa com a Antítese, ou com um cliente atendido por nós, pelo WhatsApp, Instagram Direct ou Messenger;</li>
+        <li>preenche um formulário nosso ou de um anúncio que gerenciamos.</li>
+      </ul>
+      <p>Quando tratamos dados em nome de um cliente (por exemplo, ao operar o atendimento por WhatsApp de uma empresa), o cliente é o controlador e a Antítese atua como operadora, seguindo as instruções dele e esta política.</p>
+    </section>
+
+    <section id="dados-coletados">
+      <h2>3. Dados que coletamos</h2>
+      <h3>Dados que você nos fornece</h3>
+      <ul>
+        <li>Nome, e-mail, telefone, empresa e cargo, informados em formulários, propostas, contratos ou conversas.</li>
+        <li>Conteúdo das mensagens que você nos envia.</li>
+        <li>Dados de faturamento, quando você contrata um serviço.</li>
+      </ul>
+      <h3>Dados coletados automaticamente</h3>
+      <ul>
+        <li>Endereço IP, data e hora de acesso, navegador, sistema operacional e páginas visitadas.</li>
+        <li>Identificadores de cookies e tecnologias semelhantes (veja a seção <a href="#cookies">Cookies</a>).</li>
+      </ul>
+      <h3>Dados recebidos de terceiros</h3>
+      <ul>
+        <li>Dados das plataformas da Meta, descritos na próxima seção.</li>
+        <li>Dados de contato de leads repassados por clientes para quem prestamos serviço.</li>
+      </ul>
+    </section>
+
+    <section id="dados-meta">
+      <h2>4. Dados recebidos das plataformas da Meta</h2>
+      <p>Quando você conecta sua conta do Facebook, Instagram ou WhatsApp Business a um aplicativo da Antítese, ou conversa conosco por esses canais, podemos receber os dados abaixo. Só recebemos o que você autoriza na tela de permissões da Meta, e você pode revogar essa autorização a qualquer momento.</p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Origem</th><th>Dados</th><th>Para quê</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Login com Facebook</td>
+              <td>Nome, foto de perfil, ID de usuário do aplicativo e e-mail (se autorizado).</td>
+              <td>Criar e identificar sua conta nos nossos serviços.</td>
+            </tr>
+            <tr>
+              <td>Páginas do Facebook e contas profissionais do Instagram</td>
+              <td>Nome e ID das Páginas e contas que você administra, publicações, comentários, mensagens do Direct e Messenger e métricas (insights).</td>
+              <td>Publicar e agendar conteúdo, responder comentários e mensagens e gerar relatórios de desempenho a seu pedido.</td>
+            </tr>
+            <tr>
+              <td>WhatsApp Business (API Cloud)</td>
+              <td>Número de telefone, nome de perfil, conteúdo e status das mensagens (enviada, entregue, lida).</td>
+              <td>Atender, enviar as mensagens que você pediu e manter o histórico da conversa.</td>
+            </tr>
+            <tr>
+              <td>Anúncios e formulários de cadastro (Lead Ads)</td>
+              <td>Respostas do formulário (como nome, e-mail e telefone), dados de campanhas e métricas de anúncios.</td>
+              <td>Entregar os leads ao anunciante, retornar o contato e medir resultados de campanhas.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>O uso desses dados segue os <a href="https://developers.facebook.com/terms/" rel="noopener">Termos da Plataforma da Meta</a>. A forma como a própria Meta trata seus dados está na <a href="https://www.facebook.com/privacy/policy/" rel="noopener">Política de Privacidade da Meta</a>.</p>
+    </section>
+
+    <section id="finalidades">
+      <h2>5. Como usamos os dados e com qual base legal</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Finalidade</th><th>Base legal (LGPD, art. 7º)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Prestar os serviços contratados e operar as integrações que você conectou</td><td>Execução de contrato</td></tr>
+            <tr><td>Responder mensagens, pedidos de orçamento e solicitações de suporte</td><td>Execução de contrato ou procedimentos preliminares</td></tr>
+            <tr><td>Enviar comunicações e novidades da Antítese</td><td>Consentimento, que você pode retirar a qualquer momento</td></tr>
+            <tr><td>Medir e melhorar o site e os serviços</td><td>Legítimo interesse</td></tr>
+            <tr><td>Prevenir fraude e manter a segurança</td><td>Legítimo interesse</td></tr>
+            <tr><td>Cumprir obrigações legais, fiscais e regulatórias, como guardar registros de acesso (Marco Civil da Internet)</td><td>Cumprimento de obrigação legal</td></tr>
+            <tr><td>Defender direitos em processos</td><td>Exercício regular de direitos</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="nao-fazemos">
+      <h2>6. O que não fazemos com seus dados</h2>
+      <ul>
+        <li>Não vendemos nem alugamos dados pessoais.</li>
+        <li>Não transferimos dados recebidos da Meta para corretores de dados, redes de anúncios ou qualquer serviço de monetização.</li>
+        <li>Não usamos dados da Meta para decidir sobre crédito, emprego, moradia, seguro ou outros critérios de elegibilidade.</li>
+        <li>Não usamos dados para vigilância nem para discriminar pessoas.</li>
+        <li>Não usamos dados de uma pessoa para fins diferentes daqueles para os quais ela os forneceu ou autorizou.</li>
+      </ul>
+    </section>
+
+    <section id="compartilhamento">
+      <h2>7. Com quem compartilhamos</h2>
+      <p>Compartilhamos dados apenas na medida necessária, com:</p>
+      <ul>
+        <li><strong>Prestadores de serviço (operadores)</strong>, como hospedagem, armazenamento em nuvem, envio de e-mail e ferramentas de atendimento. Eles só podem usar os dados para prestar o serviço contratado e estão sujeitos a contratos de confidencialidade e proteção de dados.</li>
+        <li><strong>Meta Platforms</strong>, quando uma mensagem é enviada ou recebida pelo WhatsApp, Instagram ou Messenger, ou quando publicamos em uma Página a seu pedido.</li>
+        <li><strong>Clientes da Antítese</strong>, quando você interage com o atendimento ou com os anúncios de uma empresa que nós operamos. Nesse caso, os dados pertencem a essa empresa.</li>
+        <li><strong>Autoridades públicas</strong>, quando houver obrigação legal ou ordem judicial.</li>
+        <li><strong>Sucessores</strong>, em caso de fusão, aquisição ou reorganização societária, mantidas as proteções desta política.</li>
+      </ul>
+    </section>
+
+    <section id="transferencia">
+      <h2>8. Transferência internacional</h2>
+      <p>Alguns fornecedores, incluindo a Meta e provedores de nuvem, armazenam dados em servidores fora do Brasil. Essas transferências seguem o art. 33 da LGPD e as regras da ANPD, com cláusulas contratuais e garantias de proteção equivalentes às brasileiras.</p>
+    </section>
+
+    <section id="retencao">
+      <h2>9. Por quanto tempo guardamos</h2>
+      <ul>
+        <li><strong>Dados de conta e de serviço:</strong> enquanto o contrato ou a conta estiverem ativos e por até 5 anos depois, pelo prazo de prescrição e por obrigações fiscais.</li>
+        <li><strong>Dados recebidos da Meta:</strong> enquanto a integração estiver conectada. Ao desconectar o aplicativo ou pedir a exclusão, apagamos esses dados em até 30 dias.</li>
+        <li><strong>Mensagens de atendimento:</strong> enquanto forem necessárias para o atendimento, ou pelo prazo definido pelo cliente controlador.</li>
+        <li><strong>Registros de acesso ao site:</strong> 6 meses, conforme o art. 15 do Marco Civil da Internet.</li>
+        <li><strong>Comunicações de marketing:</strong> até você retirar o consentimento.</li>
+      </ul>
+      <p>Depois desses prazos, os dados são excluídos ou anonimizados.</p>
+    </section>
+
+    <section id="seguranca">
+      <h2>10. Segurança</h2>
+      <p>Usamos conexão criptografada (HTTPS), controle de acesso por perfil, autenticação em dois fatores nas ferramentas internas, armazenamento seguro de tokens de acesso e registros de atividade. Nenhum sistema é totalmente imune a falhas. Se houver um incidente que possa causar risco ou dano relevante, comunicaremos os afetados e a ANPD, como exige a LGPD.</p>
+    </section>
+
+    <section id="direitos">
+      <h2>11. Seus direitos</h2>
+      <p>Pela LGPD (art. 18), você pode pedir a qualquer momento:</p>
+      <ul>
+        <li>confirmação de que tratamos seus dados e acesso a eles;</li>
+        <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+        <li>anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade com a lei;</li>
+        <li>portabilidade dos dados a outro fornecedor;</li>
+        <li>eliminação dos dados tratados com base no seu consentimento;</li>
+        <li>informação sobre com quem compartilhamos seus dados;</li>
+        <li>informação sobre a possibilidade de não consentir e suas consequências;</li>
+        <li>revogação do consentimento;</li>
+        <li>revisão de decisões tomadas apenas com base em tratamento automatizado.</li>
+      </ul>
+      <p>Para exercer esses direitos, escreva para <a href="mailto:samuel@antitese.co">samuel@antitese.co</a>. Respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (<a href="https://www.gov.br/anpd" rel="noopener">ANPD</a>).</p>
+    </section>
+
+    <section id="exclusao-de-dados">
+      <h2>12. Como pedir a exclusão dos seus dados</h2>
+      <div class="callout">
+        <p>Você pode pedir a exclusão de todos os dados que temos sobre você, inclusive os recebidos do Facebook, Instagram e WhatsApp. Não cobramos nada por isso.</p>
+      </div>
+      <h3>Opção 1: por e-mail</h3>
+      <ol class="steps">
+        <li>Envie um e-mail para <a href="mailto:samuel@antitese.co?subject=Exclus%C3%A3o%20de%20dados">samuel@antitese.co</a> com o assunto “Exclusão de dados”.</li>
+        <li>Informe seu nome e o dado que nos ajuda a localizar seu cadastro: e-mail, telefone do WhatsApp, ou nome da Página do Facebook ou conta do Instagram.</li>
+        <li>Confirmamos o recebimento em até 2 dias úteis. Se precisarmos confirmar sua identidade, pedimos isso na resposta.</li>
+        <li>Concluímos a exclusão em até 30 dias e enviamos uma confirmação.</li>
+      </ol>
+      <h3>Opção 2: removendo o aplicativo no Facebook</h3>
+      <ol class="steps">
+        <li>No Facebook, acesse <strong>Configurações e privacidade → Configurações → Apps e sites</strong>.</li>
+        <li>Encontre o aplicativo da Antítese e clique em <strong>Remover</strong>.</li>
+        <li>Para apagar também o que já foi coletado, use a Opção 1 ou o botão de solicitação de exclusão que a Meta exibe nessa tela.</li>
+      </ol>
+      <h3>Opção 3: removendo o acesso no Instagram</h3>
+      <ol class="steps">
+        <li>No Instagram, acesse <strong>Configurações → Apps e sites</strong> (ou a Central de Contas, em <strong>Suas informações e permissões</strong>).</li>
+        <li>Remova o aplicativo da Antítese e, se quiser apagar o que já foi coletado, envie o pedido da Opção 1.</li>
+      </ol>
+      <p>Alguns dados podem ser mantidos depois do pedido quando a lei exigir, como notas fiscais e registros de acesso. Nesse caso, avisamos quais dados ficaram, por qual motivo e por quanto tempo. Eles ficam bloqueados e não são usados para nenhuma outra finalidade.</p>
+    </section>
+
+    <section id="cookies">
+      <h2>13. Cookies</h2>
+      <p>Usamos cookies necessários para o funcionamento do site e, com seu consentimento, cookies de medição de audiência e de publicidade, como o Pixel da Meta e o Google Analytics. Você pode bloquear ou apagar cookies nas configurações do navegador. Os cookies necessários não podem ser desativados sem afetar o funcionamento do site.</p>
+    </section>
+
+    <section id="menores">
+      <h2>14. Crianças e adolescentes</h2>
+      <p>Nossos serviços são destinados a empresas e a maiores de 18 anos. Não coletamos dados de crianças e adolescentes de propósito. Se você souber que isso aconteceu, escreva para <a href="mailto:samuel@antitese.co">samuel@antitese.co</a> e apagaremos os dados.</p>
+    </section>
+
+    <section id="alteracoes">
+      <h2>15. Alterações desta política</h2>
+      <p>Podemos atualizar esta política para refletir mudanças nos serviços ou na lei. A data no topo da página indica a última versão. Se a mudança for relevante, avisaremos por e-mail ou por um aviso no site antes de ela entrar em vigor.</p>
+    </section>
+
+    <section id="contato">
+      <h2>16. Contato</h2>
+      <p>Dúvidas, pedidos ou reclamações sobre privacidade:</p>
+      <dl class="facts">
+        <dt>E-mail</dt><dd><a href="mailto:samuel@antitese.co">samuel@antitese.co</a></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Antítese · <a href="mailto:samuel@antitese.co">samuel@antitese.co</a>
+  </footer>
+
+</div>
+</body>
+</html>
